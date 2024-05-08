@@ -1,0 +1,40 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    margin: 0;
+    padding: 0;
+}
+
+.image-top {
+    position: absolute;
+    background: url("images/bg-pattern-top.svg");
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    top: -300px;
+    left: -150px;
+}
+
+.image-bottom {
+    position: absolute;
+    background: url("images/bg-pattern-bottom.svg");
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    bottom: -390px;
+    right: -670px;
+}
