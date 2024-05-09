@@ -1,3 +1,20 @@
+:root {
+    --ff-sans: "Kumbh Sans", sans-serif;
+
+    --clr-900: hsl(229, 23%, 23%);
+    --clr-600: hsl(185, 75%, 39%);
+    --clr-400: hsl(227, 10%, 46%);
+
+    --fs-400: 0.7rem;
+    --fs-500: 1rem;
+    --fs-600: 1.625rem;
+    --fs-900: 2.5rem;
+
+    --fw-light: 200;
+    --fw-normal: 400;
+    --fw-bold: 600;
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -11,10 +28,26 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: var(--ff-sans);
+    font-weight: var(--fw-normal);
+}
+
 body {
-    background-color: hsl(185, 75%, 39%);
+    background-color: var(--clr-600);
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
 }
 
 .image-top {
@@ -37,4 +70,66 @@ body {
     background-repeat: no-repeat;
     bottom: -390px;
     right: -670px;
+}
+
+.card-img{
+    position: relative;
+}
+
+.bcg-img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.avatar-img{
+    position: absolute;
+    bottom: -50px;
+    left: 35%;
+    border-radius: 50%;
+    border: 6px solid white ;
+}
+
+.heading {
+    font-size: var(--fs-400);
+    padding-top: 40px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.heading span {
+    font-weight: var(--fw-normal);
+    color: var(--clr-400);
+}
+
+.heading h2 {
+    font-weight: var(--fw-normal);
+    color: var(--clr-400);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.number {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-500);
+    margin-bottom: 0;
+}
+
+.details p:nth-child(2) {
+    color: var(--clr-400);
+    margin-top: 0;
+    font-size: var(--fs-400);
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: var(--clr-400);
 }
